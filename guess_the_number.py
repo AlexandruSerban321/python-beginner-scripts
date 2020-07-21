@@ -11,7 +11,7 @@ def guess_the_number():
         if user_guess == number_chosen:
             print("Well done you've guessed the number!!")
     replay = input("Do you wish to play again? ( y/n ) ")
-    if replay[0] == "y" or replay[0] == "Y":
+    if replay[0] == "y":
         guess_the_number()
     else:
         print("Thanks for using my script it means a lot to me ^^")
