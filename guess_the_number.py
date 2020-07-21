@@ -10,7 +10,7 @@ def guess_the_number():
         user_guess = int(input("Wrong answer try again "))
         if user_guess == number_chosen:
             print("Well done you've guessed the number!!")
-    replay = input("Do you wish to play again? ( y/n ) ")
+    replay = input("Do you wish to play again? ( y/n ) ").lower()
     if replay[0] == "y":
         guess_the_number()
     else:
