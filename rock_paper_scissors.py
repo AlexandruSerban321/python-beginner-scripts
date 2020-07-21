@@ -28,7 +28,7 @@ def rock_paper_scissors():
         rock_paper_scissors()
     # Replay
     replay = input("Wanna play again ( y/n ) ? ").lower()
-    if replay[0] == "y" or replay[0] == "Y":
+    if replay[0] == "y":
         rock_paper_scissors()
     else:
         print("Thanks for playing")
