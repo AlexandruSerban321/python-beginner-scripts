@@ -7,7 +7,10 @@ def password_generatore():
     try:
         password_range = int(
             input("How long do you wish you password to be ( 8-16 recomandet )? "))
-        password = "".join(choice(characters) for x in range(password_range))
+        password = "".join(choice(characters) for x in range(password_range))+'\n'
+        save_password = open('passwords.txt', 'a+')
+        save_password.write(password)
+        save_password.close()
         print(password)
         replay = input("Do you wish to try again? y/n ").lower()
         if replay[0] == "y":
