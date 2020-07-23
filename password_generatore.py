@@ -1,9 +1,9 @@
-import string
+from string import ascii_letters, punctuation, digits
 from random import choice
 
 
 def password_generatore():
-    characters = string.ascii_letters + string.punctuation + string.digits
+    characters = ascii_letters + punctuation + digits
     try:
         password_range = int(
             input("How long do you wish you password to be ( 8-16 recomandet )? "))
