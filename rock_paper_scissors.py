@@ -8,7 +8,12 @@ def rock_paper_scissors():
         "Chose one of three : rock(r), paper(p), scissors(s) ")).lower()
     # Tie resolution
     if user_choice[0] == script_choice[0]:
-        print("Is's a tie!")
+        if user_choice[0] == 'r':
+            print("It's a tie you bouth chose rock")
+        elif user_choice[0] == 'p':
+            print("It's a tie you bouth chose paper")
+        else:
+            print("It's a tie you bouth chose scissors")
     # User rock choice resolution
     elif user_choice[0] == "r" and script_choice[0] == "p":
         print("Paper beats rock you've lost")
