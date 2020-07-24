@@ -3,7 +3,7 @@ from random import randint
 
 def rock_paper_scissors():
     choices = ['rock', 'paper', 'scissors']
-    script_choice = str(choices[randint(0, 2)])
+    script_choice = choices[randint(0, 2)]
     user_choice = str(input(
         "Chose one of three : rock(r), paper(p), scissors(s) ")).lower()
     # Tie resolution
@@ -37,6 +37,7 @@ def rock_paper_scissors():
         rock_paper_scissors()
     else:
         print("Thanks for playing")
+        exit()
 
 
 rock_paper_scissors()
