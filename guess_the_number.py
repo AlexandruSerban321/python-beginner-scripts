@@ -21,7 +21,7 @@ def guess_the_number():
         else:
             print("Thanks for using my script it means a lot to me ^^")
     except ValueError:
-        print("Please enter a number not a letter or punctuation try again. ")
+        print("Please enter a valid number")
         guess_the_number()
 
 guess_the_number()
