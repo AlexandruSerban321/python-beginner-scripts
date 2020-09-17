@@ -23,5 +23,7 @@ def guess_the_number():
     except ValueError:
         print("Please enter a valid number")
         guess_the_number()
+    except KeyboardInterrupt:
+        print("\n Thanks for playing")
 
 guess_the_number()

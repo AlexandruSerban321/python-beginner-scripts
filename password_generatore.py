@@ -20,6 +20,8 @@ def password_generatore():
     except ValueError:
         print("Please enter a number not a letter or punctuation try again. ")
         password_generatore()
+    except KeyboardInterrupt:
+        print("\n Thanks for playing")
 
 
 password_generatore()
