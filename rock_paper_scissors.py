@@ -37,7 +37,7 @@ def rock_paper_scissors():
         print("Plase chose a proper answer")
         rock_paper_scissors()
     # Replay
-    replay = input("Wanna play again ( yes/no ) ? ").lower()
+    replay = input("Wanna play again ( yes/no ) ?: ").lower()
     while not replay == 'yes' or replay == 'no':
         replay = input("Please answer with 'yes' or 'no': ")
         if  replay == "yes":
